@@ -12,3 +12,6 @@ build:
 
 test:
 	echo no tests
+
+fix: 
+	npx eslint --fix .
