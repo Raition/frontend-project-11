@@ -15,8 +15,10 @@ export default (state, elements, i18nInstance) => {
     if (path === 'form.status') {
       if (currentValue === 'sending') {
         submitButton.setAttribute('disabled', true);
+        input.setAttribute('readonly', true);
       } else {
         submitButton.removeAttribute('disabled');
+        input.removeAttribute('readonly');
       }
     }
 
