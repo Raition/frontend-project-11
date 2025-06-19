@@ -1,11 +1,15 @@
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 import { defineConfig } from 'vite';
-import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
-  root: path.resolve(__dirname),
+  root: resolve(__dirname),
   resolve: {
     alias: {
-      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+      '~bootstrap': resolve(__dirname, 'node_modules/bootstrap'),
     },
   },
   server: {
