@@ -1,9 +1,9 @@
-import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
-import { defineConfig } from 'vite';
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
+import { defineConfig } from 'vite'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 export default defineConfig({
   root: resolve(__dirname),
@@ -16,4 +16,4 @@ export default defineConfig({
     port: 8080,
     hot: true,
   },
-});
+})
